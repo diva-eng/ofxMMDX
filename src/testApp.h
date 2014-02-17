@@ -2,6 +2,7 @@
 
 #include "ofMain.h"
 #include "vpvl2.h"
+#include "ofxBullet.h"
 
 class testApp : public ofBaseApp{
 
