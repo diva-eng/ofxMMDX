@@ -1,6 +1,7 @@
 #pragma once
 
 #include "ofMain.h"
+#include "vpvl2.h"
 
 class testApp : public ofBaseApp{
 

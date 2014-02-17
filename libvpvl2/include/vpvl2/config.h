@@ -39,80 +39,83 @@
 #ifndef VPVL2_CONFIG_H_
 #define VPVL2_CONFIG_H_
 
-/* use OpenGL coordinate system */
-#cmakedefine VPVL2_COORDINATE_OPENGL
+/* Xcode Change
+ 
+///* use OpenGL coordinate system */
+//#cmakedefine VPVL2_COORDINATE_OPENGL
+//
+///* Build libvpvl2 with Open Asset Import Library */
+//#cmakedefine VPVL2_LINK_ASSIMP
+//
+///* Build libvpvl2's renderer with NVIDIA Cg based rendering engines */
+//#cmakedefine VPVL2_ENABLE_NVIDIA_CG
+//
+///* Build libvpvl2 for iOS */
+//#cmakedefine VPVL2_BUILD_IOS
+//
+///* Link libvpvl2 against GLEW */
+//#cmakedefine VPVL2_LINK_GLEW
+//
+///* Link libvpvl2 against Qt */
+//#cmakedefine VPVL2_LINK_QT
+//
+///* Build libvpvl2 with OpenCL support */
+//#cmakedefine VPVL2_ENABLE_OPENCL
+//
+///* Build libvpvl2 with OpenGL ES2 support */
+//#cmakedefine VPVL2_ENABLE_GLES2
+//
+///* Build libvpvl2 with OpenMP support */
+//#cmakedefine VPVL2_ENABLE_OPENMP
+//
+///* Build libvpvl2 with Offscreen Mesa3D driver */
+//#cmakedefine VPVL2_ENABLE_OSMESA
+//
+///* Link libvpvl2 against NVIDIA texture tools */
+//#cmakedefine VPVL2_LINK_NVTT
+//
+///* Link libvpvl2 against libvpvl */
+//#cmakedefine VPVL2_LINK_VPVL
+//
+///* Link libvpvl2 against Intel Threading Building Blocks */
+//#cmakedefine VPVL2_LINK_INTEL_TBB
+//
+///* Link libvpvl2 against SFML */
+//#cmakedefine VPVL2_LINK_SFML
+//
+///* Link libvpvl2 against Google Glog */
+//#cmakedefine VPVL2_LINK_GLOG
+//
+///* Platform is Emscripten */
+//#cmakedefine VPVL2_PLATFORM_EMSCRIPTEN
+//
+///* Platform is Raspberry Pi */
+//#cmakedefine VPVL2_PLATFORM_RASPBERRY_PI
+//
+///* Build library as dynamic library */
+//#cmakedefine BUILD_SHARED_LIBS
+//
+///* Enable archive class extension */
+//#cmakedefine VPVL2_ENABLE_EXTENSIONS_ARCHIVE
+//
+///* Enable effect class extension */
+//#cmakedefine VPVL2_ENABLE_EXTENSIONS_EFFECT
+//
+///* Enable project class extension */
+//#cmakedefine VPVL2_ENABLE_EXTENSIONS_PROJECT
+//
+///* Enable render context class extension */
+//#cmakedefine VPVL2_ENABLE_EXTENSIONS_RENDERCONTEXT
+//
+///* Enable Bullet Physics world class extension extension */
+//#cmakedefine VPVL2_ENABLE_EXTENSIONS_WORLD
+//
+///* Has GNU GCC style compiler TLS (Thread Local Storage) support */
+//#cmakedefine VPVL2_HAS_STATIC_TLS_GNU
+//
+///* Has MSVC style compiler TLS (Thread Local Storage) support */
+//#cmakedefine VPVL2_HAS_STATIC_TLS_MSVC
 
-/* Build libvpvl2 with Open Asset Import Library */
-#cmakedefine VPVL2_LINK_ASSIMP
-
-/* Build libvpvl2's renderer with NVIDIA Cg based rendering engines */
-#cmakedefine VPVL2_ENABLE_NVIDIA_CG
-
-/* Build libvpvl2 for iOS */
-#cmakedefine VPVL2_BUILD_IOS
-
-/* Link libvpvl2 against GLEW */
-#cmakedefine VPVL2_LINK_GLEW
-
-/* Link libvpvl2 against Qt */
-#cmakedefine VPVL2_LINK_QT
-
-/* Build libvpvl2 with OpenCL support */
-#cmakedefine VPVL2_ENABLE_OPENCL
-
-/* Build libvpvl2 with OpenGL ES2 support */
-#cmakedefine VPVL2_ENABLE_GLES2
-
-/* Build libvpvl2 with OpenMP support */
-#cmakedefine VPVL2_ENABLE_OPENMP
-
-/* Build libvpvl2 with Offscreen Mesa3D driver */
-#cmakedefine VPVL2_ENABLE_OSMESA
-
-/* Link libvpvl2 against NVIDIA texture tools */
-#cmakedefine VPVL2_LINK_NVTT
-
-/* Link libvpvl2 against libvpvl */
-#cmakedefine VPVL2_LINK_VPVL
-
-/* Link libvpvl2 against Intel Threading Building Blocks */
-#cmakedefine VPVL2_LINK_INTEL_TBB
-
-/* Link libvpvl2 against SFML */
-#cmakedefine VPVL2_LINK_SFML
-
-/* Link libvpvl2 against Google Glog */
-#cmakedefine VPVL2_LINK_GLOG
-
-/* Platform is Emscripten */
-#cmakedefine VPVL2_PLATFORM_EMSCRIPTEN
-
-/* Platform is Raspberry Pi */
-#cmakedefine VPVL2_PLATFORM_RASPBERRY_PI
-
-/* Build library as dynamic library */
-#cmakedefine BUILD_SHARED_LIBS
-
-/* Enable archive class extension */
-#cmakedefine VPVL2_ENABLE_EXTENSIONS_ARCHIVE
-
-/* Enable effect class extension */
-#cmakedefine VPVL2_ENABLE_EXTENSIONS_EFFECT
-
-/* Enable project class extension */
-#cmakedefine VPVL2_ENABLE_EXTENSIONS_PROJECT
-
-/* Enable render context class extension */
-#cmakedefine VPVL2_ENABLE_EXTENSIONS_RENDERCONTEXT
-
-/* Enable Bullet Physics world class extension extension */
-#cmakedefine VPVL2_ENABLE_EXTENSIONS_WORLD
-
-/* Has GNU GCC style compiler TLS (Thread Local Storage) support */
-#cmakedefine VPVL2_HAS_STATIC_TLS_GNU
-
-/* Has MSVC style compiler TLS (Thread Local Storage) support */
-#cmakedefine VPVL2_HAS_STATIC_TLS_MSVC
 
 /* version */
 #define VPVL2_VERSION_MAJOR @VPVL2_VERSION_MAJOR@
