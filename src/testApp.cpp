@@ -2,7 +2,8 @@
 
 //--------------------------------------------------------------
 void testApp::setup(){
-
+    encoding = new extensions::icu4c::Encoding(0);
+    factory = new Factory(encoding);
 }
 
 //--------------------------------------------------------------

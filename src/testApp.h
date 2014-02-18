@@ -2,7 +2,10 @@
 
 #include "ofMain.h"
 #include "vpvl2.h"
+#include "Encoding.h"
 #include "ofxBullet.h"
+
+using namespace vpvl2;
 
 class testApp : public ofBaseApp{
 
@@ -20,5 +23,11 @@ class testApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
+    
+    //vpvl2
+    Factory *factory;
+    IRenderEngine *engine;
+    IEncoding *encoding;
+    Scene *scene;
 		
 };

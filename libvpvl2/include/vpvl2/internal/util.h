@@ -60,8 +60,9 @@ namespace vpvl2
 {
 namespace internal
 {
-
-static const int kCurrentVersion = VPVL2_VERSION;
+//Temp fix r1cebank:Github
+//static const int kCurrentVersion = VPVL2_VERSION;
+static const int kCurrentVersion = 0;
 static const char *const kCurrentVersionString = VPVL2_VERSION_STRING;
 
 static inline void zerofill(void *ptr, size_t size)
@@ -242,6 +243,12 @@ static inline int readUnsignedIndex(uint8_t *&ptr, size_t size)
     return result;
 }
 
+static void inline setPositionRaw(const float32_t *input, Vector3 &output)
+{
+    VPVL2_DCHECK_NOTNULL(input);
+    output.setValue(input[0], input[1], input[2]);
+}
+
 static void inline setPosition(const float32_t *input, Vector3 &output)
 {
     VPVL2_DCHECK_NOTNULL(input);
@@ -250,12 +257,6 @@ static void inline setPosition(const float32_t *input, Vector3 &output)
 #else
     setPositionRaw(input, output);
 #endif
-}
-
-static void inline setPositionRaw(const float32_t *input, Vector3 &output)
-{
-    VPVL2_DCHECK_NOTNULL(input);
-    output.setValue(input[0], input[1], input[2]);
 }
 
 static void inline getPosition(const Vector3 &input, float32_t *output)

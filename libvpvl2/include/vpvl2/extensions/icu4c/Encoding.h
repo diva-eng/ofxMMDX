@@ -41,7 +41,7 @@
 #include <unicode/ucsdet.h>
 
 #include <vpvl2/IEncoding.h>
-#include <vpvl2/extensions/icu4c/String.h>
+#include <vpvl2/extensions/icu4c/UString.h>
 
 namespace vpvl2
 {

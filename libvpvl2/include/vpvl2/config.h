@@ -41,7 +41,7 @@
 
 /* Xcode Change
  
-///* use OpenGL coordinate system */
+/// use OpenGL coordinate system */
 //#cmakedefine VPVL2_COORDINATE_OPENGL
 //
 ///* Build libvpvl2 with Open Asset Import Library */
